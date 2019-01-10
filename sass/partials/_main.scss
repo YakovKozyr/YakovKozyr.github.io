@@ -1,0 +1,146 @@
+main {
+  width: 100%;
+  font-family: $font-family;
+  position: relative;
+
+  .infoBlock {
+    width: 100%;
+    display: block;
+    position: relative;
+    padding-top: 45px;
+    overflow: hidden;
+    background-color: #e6f1fa;
+
+    .rombsBottom {
+      width: 621px;
+      height: 415px;
+      background: url('../img/rombsBottom.png');
+      position: absolute;
+      content: '';
+      top: 0px;
+      left: 199px;
+    }
+
+    .logo-main1 {
+      width: 199px;
+      height: 162px;
+      background-image: url('../img/logo-main1.png');
+      position: absolute;
+      content: '';
+      top: 91px;
+      left: 480px;
+    }
+
+    .info {
+      width: 719px;
+      color: #000000;
+      font-size: 18px;
+      float: right;
+      overflow: hidden;
+      margin-right: 421px;
+      line-height: 24px;
+      font-family: $font-family-L;
+
+      li {
+        margin-bottom: 35px;
+
+        .infoTeam {
+          margin-left: 72px;
+
+          li {
+            margin-bottom: 11px;
+            position: relative;
+
+            &::before {
+              content: "";
+              width: 8px;
+              height: 8px;
+              border-radius: 50%;
+              background: $font-color;
+              position: absolute;
+              left: -30px;
+              top: 10px;
+            }
+          }
+        }
+
+        p {
+          overflow: hidden;
+        }
+      }
+    }
+  }
+
+  .imgBlock {
+    widows: 100%;
+    background-image: url('../img/main-bg.png');
+    background-repeat: repeat-x;
+    padding: 30px 0;
+    position: relative;
+    overflow: hidden;
+
+    .img-container {
+      width: 1450px;
+      margin: 0 auto;
+      overflow: hidden;
+      display: block;
+
+      .imgBox {
+        float: left;
+        margin-bottom: 28px;
+        position: relative;
+
+        &:nth-child(3),
+        &:nth-child(4) {
+          margin-bottom: 0;
+        }
+
+        &:nth-child(2n+1) {
+          margin-right: 28px;
+        }
+
+        img {
+          max-width: 100%;
+          width: 100%;
+        }
+
+        .name {
+          position: absolute;
+          opacity: 0.52;
+          content: '';
+          background-color: #fff;
+
+          p {
+            color: $font-color;
+            font-size: 30px;
+            font-family: $font-family-M;
+          }
+        }
+
+        &:first-of-type .name {
+          bottom: 0;
+          right: 0;
+          padding: 21px 24px;
+        }
+
+        &:nth-child(2) .name {
+          bottom: 0;
+          left: 0;
+          padding: 21px 33px;
+        }
+
+        &:nth-child(3) .name {
+          top: 0;
+          right: 0;
+          padding: 21px 23px;
+        }
+
+        &:nth-child(4) .name {
+          top: 0;
+          left: 0;
+          padding: 21px 28px;
+        }
+      }
+    }
+  }
+}

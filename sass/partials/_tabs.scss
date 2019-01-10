@@ -1,0 +1,710 @@
+.tabsBlock {
+	width: 100%;
+	position: relative;
+	background-color: #fff;
+	display: flex;
+
+	.rombs-main {
+		width: 755px;
+		height: 1024px;
+		background: url("../img/rombs-main.png");
+		background-repeat: no-repeat;
+		background-size: contain;
+		position: absolute;
+		right: 0;
+		bottom: -265px;
+		z-index: 1;
+	}
+
+	.tabsContainer {
+		width: 1075px;
+		margin: 0 auto;
+		display: flex;
+		flex-direction: row;
+		position: relative;
+		justify-content: space-between;
+
+		.tabsBar {
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			align-self: center;
+			background-image: url('../img/tabs-bg.png');
+			background-repeat: repeat-y;
+			background-position: center;
+			justify-content: center;
+
+			.tabs {
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				height: 540px;
+				align-items: center;
+				align-self: center;
+
+				li {
+					display: block;
+
+					&.active a,
+					&:active a,
+					&:focus a {
+						background-color: $font-color;
+						cursor: pointer;
+					}
+
+					a {
+						width: 40px;
+						height: 40px;
+						border: 3px solid $font-color;
+						display: block;
+						transform: rotate(-45deg);
+						margin: 0 auto;
+						background-color: #fff;
+
+						.mob-btn,
+						.mob-text {
+							display: none;
+						}
+					}
+
+					p {
+						color: #000000;
+						font-size: 18px;
+						font-family: $font-family-L;
+						margin-top: 20px;
+						background-color: #fff;
+					}
+				}
+			}
+		}
+
+		.tab-content {
+			width: 898px;
+			height: 1025px;
+			color: #000000;
+			font-family: $font-family-L;
+			font-size: 30px;
+			padding: 51px 0;
+			letter-spacing: 0.3px;
+
+			.t1 {
+				overflow: hidden;
+				text-align: center;
+
+				h2 {
+					margin-bottom: 30px;
+					font-family: $font-family-L;
+					font-size: 30px;
+					letter-spacing: 0.3px;
+					text-align: center;
+				}
+
+				.description {
+					font-family: $font-family-L;
+					font-size: 18px;
+					width: 659px;
+					margin: 0 auto;
+					letter-spacing: 0.18px;
+					margin-bottom: 30px;
+				}
+
+				.advantages {
+					@extend .description;
+					margin-bottom: 21px;
+				}
+
+				.t1-content {
+					margin-top: 20px;
+					width: 900px;
+					position: relative;
+					text-align: left;
+					overflow: hidden;
+
+					.tabsLogo {
+						background-image: url('../img/logo-main.png');
+						background-repeat: no-repeat;
+						height: 269px;
+						width: 315px;
+						background-position: center;
+						position: absolute;
+						left: calc(50% - (315px/2));
+						top: 89px;
+						content: '';
+					}
+
+					.left {
+						float: left;
+						width: 260px;
+						line-height: 18px;
+
+						li {
+							font-size: 14px;
+							position: relative;
+
+
+							&:nth-child(1)::after {
+								width: 142px;
+								height: 75px;
+								background-image: url('../img/line6.png');
+								top: 32px;
+								left: 255px;
+								position: absolute;
+								content: '';
+							}
+
+							&:nth-child(2) {
+								margin-top: 27px;
+								margin-bottom: 30px;
+							}
+
+
+							&:nth-child(2)::after {
+								width: 150px;
+								height: 1px;
+								background-image: url('../img/line2.png');
+								top: 65px;
+								left: 220px;
+								content: '';
+								position: absolute;
+							}
+
+							&:nth-child(3) p {
+								letter-spacing: 0.14px;
+								line-height: 18px;
+							}
+
+							&:nth-child(3)::after {
+								width: 172px;
+								height: 1px;
+								top: 17px;
+								left: 176px;
+								background-image: url('../img/line4.png');
+								background-repeat: repeat-x;
+								content: '';
+								position: absolute;
+							}
+
+							p {
+								overflow: hidden;
+								font-family: $font-family-L;
+
+								span {
+									font-family: $font-family-M;
+									font-size: 18px;
+									font-weight: bold;
+									letter-spacing: 0.18px;
+								}
+							}
+						}
+					}
+
+					.right {
+						width: 260px;
+						line-height: 18px;
+						float: right;
+
+						li {
+							font-size: 14px;
+							position: relative;
+
+							&:nth-child(1)::after {
+								width: 70px;
+								height: 70px;
+								top: 20px;
+								right: 265px;
+								background-image: url('../img/line3.png');
+								content: '';
+								position: absolute;
+								background-repeat: no-repeat;
+							}
+
+							&:nth-child(2) {
+								margin-top: 32px;
+							}
+
+							&:nth-child(2)::after {
+								width: 50px;
+								height: 1px;
+								top: 17px;
+								right: 265px;
+								background-image: url('../img/line4.png');
+								background-repeat: repeat-x;
+								content: '';
+								position: absolute;
+							}
+
+							&:nth-child(3) {
+								margin-top: 36px;
+							}
+
+							&:nth-child(3)::after {
+								width: 109px;
+								height: 50px;
+								top: 40px;
+								right: 265px;
+								background-image: url('../img/line8.png');
+								content: '';
+								position: absolute;
+							}
+
+							&:nth-child(4) {
+								margin-top: 27px;
+
+							}
+
+							&:nth-child(4)::after {
+								content: '';
+								position: absolute;
+								width: 178px;
+								height: 66px;
+								bottom: 15px;
+								right: 267px;
+								background-image: url('../img/line7.png');
+							}
+
+							p {
+								overflow: hidden;
+								font-family: $font-family-L;
+
+								span {
+									font-family: $font-family-M;
+									font-size: 18px;
+									font-weight: bold;
+									letter-spacing: 0.18px;
+								}
+							}
+						}
+					}
+				}
+
+				.values-t1 {
+					overflow: hidden;
+					padding-top: 45px;
+					padding-bottom: 35px;
+					width: 654px;
+					font-size: 18px;
+					margin: 0 auto;
+				}
+
+				.moreInfo {
+					@extend .values-t1;
+					padding-top: 0;
+					padding-bottom: 20px;
+				}
+
+				.callback {
+					width: 256px;
+					display: block;
+					padding: 21px 0;
+					overflow: hidden;
+					margin: 0 auto;
+					background: $font-color;
+					border-radius: 3px;
+					font-family: $font-family-EL;
+					font-size: 24px;
+					font-weight: 400;
+					color: #fff;
+				}
+			}
+
+			.t2 {
+				@extend .t1;
+
+				h2 {
+					margin-bottom: 34px;
+					font-family: $font-family-L;
+					font-size: 30px;
+					letter-spacing: 0.3px;
+					text-align: center;
+				}
+
+				.description {
+					font-family: $font-family-L;
+					font-size: 18px;
+					width: 659px;
+					margin: 0 auto;
+					letter-spacing: 0.18px;
+					margin-bottom: 37px;
+				}
+
+				.advantages {
+					@extend .description;
+					margin-bottom: 21px;
+				}
+
+				.t2-content {
+					margin-top: 21px;
+					width: 900px;
+					position: relative;
+					text-align: left;
+					overflow: hidden;
+
+					.tabsLogo {
+						background-image: url('../img/logo-main.png');
+						background-repeat: no-repeat;
+						height: 269px;
+						width: 315px;
+						background-position: center;
+						position: absolute;
+						left: calc(50% - (315px/2));
+						top: 89px;
+						content: '';
+					}
+
+					.left {
+						float: left;
+						width: 253px;
+						line-height: 18px;
+
+						li {
+							font-size: 14px;
+							position: relative;
+
+							&:nth-child(1)::after {
+								width: 204px;
+								height: 100px;
+								background-image: url('../img/line1.png');
+								top: 20px;
+								left: 185px;
+								background-repeat: no-repeat;
+								position: absolute;
+								content: '';
+							}
+
+							&:nth-child(2) {
+								margin-top: 57px;
+								letter-spacing: 0;
+								line-height: 18px;
+							}
+
+
+							&:nth-child(2)::after {
+								width: 150px;
+								height: 1px;
+								background-image: url('../img/line2.png');
+								top: 80px;
+								background-repeat: no-repeat;
+								left: 237px;
+								content: '';
+								position: absolute;
+							}
+
+							p {
+								overflow: hidden;
+								font-family: $font-family-L;
+
+								span {
+									font-family: $font-family-M;
+									font-size: 18px;
+									font-weight: bold;
+									letter-spacing: 0.18px;
+								}
+							}
+						}
+					}
+
+					.right {
+						width: 260px;
+						line-height: 18px;
+						float: right;
+
+						li {
+							font-size: 14px;
+							position: relative;
+
+							&:nth-child(1)::after {
+								width: 60px;
+								height: 75px;
+								top: 15px;
+								right: 265px;
+								background-image: url('../img/line3.png');
+								content: '';
+								position: absolute;
+								background-repeat: no-repeat;
+							}
+
+							&:nth-child(2) {
+								margin-top: 39px;
+								margin-bottom: 41px;
+							}
+
+							&:nth-child(2) {
+								letter-spacing: 0;
+							}
+
+							&:nth-child(2)::after {
+								width: 65px;
+								height: 1px;
+								top: 20px;
+								right: 267px;
+								background-image: url('../img/line4.png');
+								background-repeat: repeat-x;
+								content: '';
+								position: absolute;
+							}
+
+							&:nth-child(3)::after {
+								width: 93px;
+								height: 1px;
+								top: 15px;
+								right: 268px;
+								background-image: url('../img/line5.png');
+								content: '';
+								position: absolute;
+							}
+
+
+
+							p {
+								overflow: hidden;
+								font-family: $font-family-L;
+
+								span {
+									font-family: $font-family-M;
+									font-size: 18px;
+									font-weight: bold;
+									letter-spacing: 0.18px;
+								}
+							}
+						}
+					}
+				}
+
+				.values-t2 {
+					overflow: hidden;
+					padding-top: 68px;
+					padding-bottom: 35px;
+					width: 654px;
+					font-size: 18px;
+					margin: 0 auto;
+				}
+
+				.moreInfo {
+					@extend .values-t2;
+					padding-top: 0;
+					padding-bottom: 25px;
+				}
+
+				.callback {
+					width: 256px;
+					display: block;
+					padding: 21px 0;
+					overflow: hidden;
+					margin: 0 auto;
+					background: $font-color;
+					border-radius: 3px;
+					font-family: $font-family-EL;
+					font-size: 24px;
+					font-weight: 400;
+					color: #fff;
+				}
+			}
+
+			.t3 {
+				@extend .t2;
+
+				h2 {
+					margin-bottom: 34px;
+					font-family: $font-family-L;
+					font-size: 30px;
+					letter-spacing: 0.3px;
+					text-align: center;
+				}
+
+				.description {
+					font-family: $font-family-L;
+					font-size: 18px;
+					width: 659px;
+					margin: 0 auto;
+					letter-spacing: 0.18px;
+					margin-bottom: 37px;
+				}
+
+				.advantages {
+					@extend .description;
+					margin-bottom: 21px;
+				}
+
+				.t3-content {
+					margin-top: 51px;
+					width: 900px;
+					position: relative;
+					text-align: left;
+					overflow: hidden;
+
+					.tabsLogo {
+						background-image: url('../img/logo-main.png');
+						background-repeat: no-repeat;
+						height: 269px;
+						width: 315px;
+						background-position: center;
+						position: absolute;
+						left: calc(50% - (315px/2));
+						top: 135px;
+						content: '';
+					}
+
+					.left {
+						float: left;
+						width: 300px;
+						line-height: 18px;
+
+						li {
+							font-size: 14px;
+							position: relative;
+
+							&:nth-child(1)::after {
+								width: 110px;
+								height: 95px;
+								top: 17px;
+								left: 285px;
+								background-image: url('../img/line9.png');
+								background-repeat: no-repeat;
+								position: absolute;
+								content: '';
+							}
+
+							&:nth-child(1) {
+								margin-top: 24px;
+							}
+
+							&:nth-child(2) {
+								margin-top: 67px;
+								margin-bottom: 53px;
+								letter-spacing: 0;
+								line-height: 18px;
+							}
+
+							&:nth-child(2)::after {
+								width: 150px;
+								height: 1px;
+								background-image: url('../img/line2.png');
+								top: 126px;
+								left: 198px;
+								content: '';
+								position: absolute;
+							}
+
+							&:nth-child(3) {
+								letter-spacing: 0;
+							}
+
+							&:nth-child(3)::after {
+								width: 150px;
+								height: 81px;
+								bottom: 50px;
+								left: 310px;
+								background-image: url('../img/line10.png');
+								content: '';
+								position: absolute;
+								background-repeat: no-repeat;
+							}
+
+							p {
+								overflow: hidden;
+								font-family: $font-family-L;
+
+								span {
+									font-family: $font-family-M;
+									font-size: 18px;
+									font-weight: bold;
+									letter-spacing: 0.18px;
+								}
+							}
+						}
+					}
+
+					.right {
+						width: 260px;
+						line-height: 18px;
+						float: right;
+
+						li {
+							font-size: 14px;
+							position: relative;
+
+							&:nth-child(1)::after {
+								width: 50px;
+								height: 1px;
+								top: 163px;
+								right: 257px;
+								background-image: url('../img/line2.png');
+								content: '';
+								position: absolute;
+								background-repeat: no-repeat;
+							}
+
+							&:nth-child(2) {
+								margin-top: 35px;
+								margin-bottom: 42px;
+								margin-left: -50px;
+							}
+
+							&:nth-child(2)::after {
+								width: 43px;
+								height: 1px;
+								background-image: url('../img/line4.png');
+								background-repeat: repeat-x;
+								top: 8px;
+								right: 315px;
+								content: '';
+								position: absolute;
+							}
+
+							&:nth-child(3)::after {
+								width: 100px;
+								height: 1px;
+								top: 31px;
+								right: 258px;
+								background-image: url('../img/line2.png');
+								content: '';
+								position: absolute;
+							}
+
+
+
+							p {
+								overflow: hidden;
+								font-family: $font-family-L;
+
+								span {
+									font-family: $font-family-M;
+									font-size: 18px;
+									font-weight: bold;
+								}
+							}
+						}
+					}
+				}
+
+				.img-mob-block {
+					display: none;
+				}
+
+				.moreInfo {
+					width: 587px;
+					font-size: 18px;
+					line-height: 24px;
+					letter-spacing: 0.18px;
+					padding-bottom: 45px;
+					padding-top: 20px;
+				}
+
+				.callback {
+					width: 256px;
+					display: block;
+					padding: 21px 0;
+					overflow: hidden;
+					margin: 0 auto;
+					background: $font-color;
+					border-radius: 3px;
+					font-family: $font-family-EL;
+					font-size: 24px;
+					font-weight: 400;
+					color: #fff;
+				}
+			}
+		}
+	}
+}

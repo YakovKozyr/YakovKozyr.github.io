@@ -1,0 +1,52 @@
+.slider {
+  width: 100%;
+  height: 340px;
+  background: $font-color;
+
+  .sliderBox {
+    width: 1110px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 0 auto;
+
+    .content {
+      width: 620px;
+      color: #fff;
+      font-family: $font-family-EL;
+      font-size: 24px;
+      position: relative;
+
+      &:before {
+        content: "";
+        width: 92px;
+        height: 70px;
+        background-image: url('../img/quote-left.png');
+        background-repeat: no-repeat;
+        position: absolute;
+        bottom: -30px;
+        left: -125px;
+      }
+
+      &:after {
+        content: "";
+        width: 92px;
+        height: 70px;
+        background-image: url('../img/quote-right.png');
+        background-repeat: no-repeat;
+        position: absolute;
+        top: -48px;
+        right: -132px;
+        color: #fff;
+      }
+
+      .name {
+        position: absolute;
+        bottom: -45px;
+        right: -25px;
+      }
+    }
+  }
+}

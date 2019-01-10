@@ -1,0 +1,1205 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+html {
+  -webkit-text-size-adjust: none;
+  /* Prevent font scaling in landscape */ }
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block; }
+
+blockquote,
+q {
+  quotes: none; }
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none; }
+
+img {
+  border-style: none;
+  max-width: 100%; }
+
+a {
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: none; }
+
+input,
+textarea,
+select {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  vertical-align: middle;
+  color: #000;
+  padding: 0; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+form fieldset {
+  margin: 0;
+  padding: 0;
+  border: none; }
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+*:focus {
+  outline: none; }
+
+input::-webkit-input-placeholder {
+  color: #bebebe; }
+
+input:focus::-webkit-input-placeholder {
+  color: #bebebe; }
+
+/***************************************************              GENERAL STYLES             ***************************************************/
+h1 {
+  font: 35px sans-serif; }
+
+h2 {
+  font: 25px sans-serif; }
+
+h3 {
+  font: 23px sans-serif; }
+
+h4 {
+  font: 21px sans-serif; }
+
+h5 {
+  font: 18px sans-serif; }
+
+h6 {
+  font: 16px sans-serif; }
+
+/**********************************************************              PC - LARGE             *************************************************/
+/*@media (min-width: 1218px) and (max-width: 10000px) {}*/
+/* wrapper */
+#wrapper {
+  display: block;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 100%; }
+
+/****************************************************************              PC              ***************************************************/
+/****************************************************************              TABLET              ***********************************************/
+@media (min-width: 768px) and (max-width: 977px) {
+  .layout {
+    margin: 0 auto;
+    position: relative;
+    width: 768px; } }
+
+/****************************************************************              MOBILE              ***********************************************/
+@media (min-width: 320px) and (max-width: 767px) {
+  .layout {
+    width: 100%;
+    padding: 0; } }
+
+@font-face {
+  font-family: 'Brutal Type';
+  src: url("../fonts/BrutalType.woff2") format("woff2"), url("../fonts/BrutalType.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Brutal Type Light';
+  src: url("../fonts/BrutalType-Light.woff2") format("woff2"), url("../fonts/BrutalType-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Brutal Type ExtraLight';
+  src: url("../fonts/BrutalType-ExtraLight.woff2") format("woff2"), url("../fonts/BrutalType-ExtraLight.woff") format("woff");
+  font-weight: 200;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Brutal Type Medium';
+  src: url("../fonts/BrutalType-Medium.woff2") format("woff2"), url("../fonts/BrutalType-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal; }
+
+header {
+  width: 100%;
+  background-image: url("../img/header-bg.png");
+  background-size: cover;
+  font-family: "Brutal Type";
+  color: #414f7e;
+  padding-bottom: 359px;
+  position: relative;
+  padding-top: 34px; }
+  header .rombsTop {
+    width: 861px;
+    height: 640px;
+    background-image: url("../img/rombsTop.png");
+    position: absolute;
+    bottom: 0px;
+    left: 0px; }
+  header .headerTop {
+    margin: 0 auto;
+    padding: 2px 127px 27px 0;
+    position: relative;
+    text-align: right;
+    width: 1366px; }
+    header .headerTop::after {
+      position: absolute;
+      content: url("../img/logo.png");
+      z-index: 1;
+      left: calc(50% - 81px);
+      top: 0; }
+    header .headerTop p {
+      font-size: 24px;
+      font-family: "Brutal Type Light";
+      line-height: 22px; }
+      header .headerTop p span {
+        opacity: 0.8;
+        display: block;
+        color: #414f7e;
+        font-size: 18px;
+        font-family: "Brutal Type Light";
+        line-height: 22px;
+        letter-spacing: 0.45px; }
+  header nav {
+    width: 100%;
+    background-color: #fff;
+    opacity: 0.51;
+    padding: 22px 0;
+    overflow: hidden; }
+    header nav .nav-container {
+      display: block;
+      width: 872px;
+      margin: 0 auto; }
+    header nav .navLeft, header nav .navRight {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      float: left;
+      width: 250px;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row; }
+      header nav .navLeft li, header nav .navRight li {
+        position: relative; }
+        header nav .navLeft li:nth-child(2)::after, header nav .navRight li:nth-child(2)::after {
+          position: absolute;
+          content: url("../img/arrow-down.png");
+          right: -21px; }
+        header nav .navLeft li a, header nav .navRight li a {
+          text-decoration: none; }
+    header nav .navRight {
+      float: right; }
+      header nav .navRight li:nth-child(2)::after {
+        display: none; }
+  header .headerSocials {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+    width: 1366px;
+    padding: 26px 127px 116px 0; }
+    header .headerSocials a {
+      display: block;
+      float: right;
+      clear: both;
+      width: 30px;
+      height: 30px;
+      background-size: 30px 30px;
+      opacity: 0.71; }
+      header .headerSocials a:first-child {
+        background-image: url("../img/facebook.png"); }
+      header .headerSocials a:nth-child(2) {
+        margin: 22px 0;
+        background-image: url("../img/instag.png"); }
+      header .headerSocials a:nth-child(3) {
+        background-repeat: no-repeat;
+        background-size: 30px 20px;
+        background-image: url("../img/email.png"); }
+  header .headerBottom {
+    margin: 0 auto;
+    position: relative;
+    color: #fff;
+    text-align: center; }
+    header .headerBottom p {
+      font-size: 90px;
+      letter-spacing: 0.9px;
+      font-family: "Brutal Type Light";
+      margin-bottom: 87px; }
+      header .headerBottom p span {
+        font-size: 36px;
+        line-height: 60px;
+        letter-spacing: 0.36px;
+        font-family: "Brutal Type Light";
+        display: block; }
+    header .headerBottom a {
+      border: 1px solid #fff;
+      border-radius: 5px;
+      padding: 22px 32px;
+      font-family: "Brutal Type ExtraLight";
+      color: #fff;
+      font-size: 24px;
+      line-height: 23.68px;
+      letter-spacing: 0.22px;
+      display: inline-block; }
+
+main {
+  width: 100%;
+  font-family: "Brutal Type";
+  position: relative; }
+  main .infoBlock {
+    width: 100%;
+    display: block;
+    position: relative;
+    padding-top: 45px;
+    overflow: hidden;
+    background-color: #e6f1fa; }
+    main .infoBlock .rombsBottom {
+      width: 621px;
+      height: 415px;
+      background: url("../img/rombsBottom.png");
+      position: absolute;
+      content: '';
+      top: 0px;
+      left: 199px; }
+    main .infoBlock .logo-main1 {
+      width: 199px;
+      height: 162px;
+      background-image: url("../img/logo-main1.png");
+      position: absolute;
+      content: '';
+      top: 91px;
+      left: 480px; }
+    main .infoBlock .info {
+      width: 719px;
+      color: #000000;
+      font-size: 18px;
+      float: right;
+      overflow: hidden;
+      margin-right: 421px;
+      line-height: 24px;
+      font-family: "Brutal Type Light"; }
+      main .infoBlock .info li {
+        margin-bottom: 35px; }
+        main .infoBlock .info li .infoTeam {
+          margin-left: 72px; }
+          main .infoBlock .info li .infoTeam li {
+            margin-bottom: 11px;
+            position: relative; }
+            main .infoBlock .info li .infoTeam li::before {
+              content: "";
+              width: 8px;
+              height: 8px;
+              border-radius: 50%;
+              background: #414f7e;
+              position: absolute;
+              left: -30px;
+              top: 10px; }
+        main .infoBlock .info li p {
+          overflow: hidden; }
+  main .imgBlock {
+    widows: 100%;
+    background-image: url("../img/main-bg.png");
+    background-repeat: repeat-x;
+    padding: 30px 0;
+    position: relative;
+    overflow: hidden; }
+    main .imgBlock .img-container {
+      width: 1450px;
+      margin: 0 auto;
+      overflow: hidden;
+      display: block; }
+      main .imgBlock .img-container .imgBox {
+        float: left;
+        margin-bottom: 28px;
+        position: relative; }
+        main .imgBlock .img-container .imgBox:nth-child(3), main .imgBlock .img-container .imgBox:nth-child(4) {
+          margin-bottom: 0; }
+        main .imgBlock .img-container .imgBox:nth-child(2n+1) {
+          margin-right: 28px; }
+        main .imgBlock .img-container .imgBox img {
+          max-width: 100%;
+          width: 100%; }
+        main .imgBlock .img-container .imgBox .name {
+          position: absolute;
+          opacity: 0.52;
+          content: '';
+          background-color: #fff; }
+          main .imgBlock .img-container .imgBox .name p {
+            color: #414f7e;
+            font-size: 30px;
+            font-family: "Brutal Type Medium"; }
+        main .imgBlock .img-container .imgBox:first-of-type .name {
+          bottom: 0;
+          right: 0;
+          padding: 21px 24px; }
+        main .imgBlock .img-container .imgBox:nth-child(2) .name {
+          bottom: 0;
+          left: 0;
+          padding: 21px 33px; }
+        main .imgBlock .img-container .imgBox:nth-child(3) .name {
+          top: 0;
+          right: 0;
+          padding: 21px 23px; }
+        main .imgBlock .img-container .imgBox:nth-child(4) .name {
+          top: 0;
+          left: 0;
+          padding: 21px 28px; }
+
+.tabsBlock {
+  width: 100%;
+  position: relative;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .tabsBlock .rombs-main {
+    width: 755px;
+    height: 1024px;
+    background: url("../img/rombs-main.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    right: 0;
+    bottom: -265px;
+    z-index: 1; }
+  .tabsBlock .tabsContainer {
+    width: 1075px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    position: relative;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+    .tabsBlock .tabsContainer .tabsBar {
+      height: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -ms-flex-item-align: center;
+      align-self: center;
+      background-image: url("../img/tabs-bg.png");
+      background-repeat: repeat-y;
+      background-position: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
+      .tabsBlock .tabsContainer .tabsBar .tabs {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        height: 540px;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -ms-flex-item-align: center;
+        align-self: center; }
+        .tabsBlock .tabsContainer .tabsBar .tabs li {
+          display: block; }
+          .tabsBlock .tabsContainer .tabsBar .tabs li.active a,
+          .tabsBlock .tabsContainer .tabsBar .tabs li:active a,
+          .tabsBlock .tabsContainer .tabsBar .tabs li:focus a {
+            background-color: #414f7e;
+            cursor: pointer; }
+          .tabsBlock .tabsContainer .tabsBar .tabs li a {
+            width: 40px;
+            height: 40px;
+            border: 3px solid #414f7e;
+            display: block;
+            -webkit-transform: rotate(-45deg);
+            -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+            margin: 0 auto;
+            background-color: #fff; }
+            .tabsBlock .tabsContainer .tabsBar .tabs li a .mob-btn,
+            .tabsBlock .tabsContainer .tabsBar .tabs li a .mob-text {
+              display: none; }
+          .tabsBlock .tabsContainer .tabsBar .tabs li p {
+            color: #000000;
+            font-size: 18px;
+            font-family: "Brutal Type Light";
+            margin-top: 20px;
+            background-color: #fff; }
+    .tabsBlock .tabsContainer .tab-content {
+      width: 898px;
+      height: 1025px;
+      color: #000000;
+      font-family: "Brutal Type Light";
+      font-size: 30px;
+      padding: 51px 0;
+      letter-spacing: 0.3px; }
+      .tabsBlock .tabsContainer .tab-content .t1, .tabsBlock .tabsContainer .tab-content .t2, .tabsBlock .tabsContainer .tab-content .t3 {
+        overflow: hidden;
+        text-align: center; }
+        .tabsBlock .tabsContainer .tab-content .t1 h2, .tabsBlock .tabsContainer .tab-content .t2 h2, .tabsBlock .tabsContainer .tab-content .t3 h2 {
+          margin-bottom: 30px;
+          font-family: "Brutal Type Light";
+          font-size: 30px;
+          letter-spacing: 0.3px;
+          text-align: center; }
+        .tabsBlock .tabsContainer .tab-content .t1 .description, .tabsBlock .tabsContainer .tab-content .t2 .description, .tabsBlock .tabsContainer .tab-content .t3 .description, .tabsBlock .tabsContainer .tab-content .t1 .advantages, .tabsBlock .tabsContainer .tab-content .t2 .advantages, .tabsBlock .tabsContainer .tab-content .t3 .advantages {
+          font-family: "Brutal Type Light";
+          font-size: 18px;
+          width: 659px;
+          margin: 0 auto;
+          letter-spacing: 0.18px;
+          margin-bottom: 30px; }
+        .tabsBlock .tabsContainer .tab-content .t1 .advantages, .tabsBlock .tabsContainer .tab-content .t2 .advantages, .tabsBlock .tabsContainer .tab-content .t3 .advantages {
+          margin-bottom: 21px; }
+        .tabsBlock .tabsContainer .tab-content .t1 .t1-content, .tabsBlock .tabsContainer .tab-content .t2 .t1-content, .tabsBlock .tabsContainer .tab-content .t3 .t1-content {
+          margin-top: 20px;
+          width: 900px;
+          position: relative;
+          text-align: left;
+          overflow: hidden; }
+          .tabsBlock .tabsContainer .tab-content .t1 .t1-content .tabsLogo, .tabsBlock .tabsContainer .tab-content .t2 .t1-content .tabsLogo, .tabsBlock .tabsContainer .tab-content .t3 .t1-content .tabsLogo {
+            background-image: url("../img/logo-main.png");
+            background-repeat: no-repeat;
+            height: 269px;
+            width: 315px;
+            background-position: center;
+            position: absolute;
+            left: calc(50% - (315px/2));
+            top: 89px;
+            content: ''; }
+          .tabsBlock .tabsContainer .tab-content .t1 .t1-content .left, .tabsBlock .tabsContainer .tab-content .t2 .t1-content .left, .tabsBlock .tabsContainer .tab-content .t3 .t1-content .left {
+            float: left;
+            width: 260px;
+            line-height: 18px; }
+            .tabsBlock .tabsContainer .tab-content .t1 .t1-content .left li, .tabsBlock .tabsContainer .tab-content .t2 .t1-content .left li, .tabsBlock .tabsContainer .tab-content .t3 .t1-content .left li {
+              font-size: 14px;
+              position: relative; }
+              .tabsBlock .tabsContainer .tab-content .t1 .t1-content .left li:nth-child(1)::after, .tabsBlock .tabsContainer .tab-content .t2 .t1-content .left li:nth-child(1)::after, .tabsBlock .tabsContainer .tab-content .t3 .t1-content .left li:nth-child(1)::after {
+                width: 142px;
+                height: 75px;
+                background-image: url("../img/line6.png");
+                top: 32px;
+                left: 255px;
+                position: absolute;
+                content: ''; }
+              .tabsBlock .tabsContainer .tab-content .t1 .t1-content .left li:nth-child(2), .tabsBlock .tabsContainer .tab-content .t2 .t1-content .left li:nth-child(2), .tabsBlock .tabsContainer .tab-content .t3 .t1-content .left li:nth-child(2) {
+                margin-top: 27px;
+                margin-bottom: 30px; }
+              .tabsBlock .tabsContainer .tab-content .t1 .t1-content .left li:nth-child(2)::after, .tabsBlock .tabsContainer .tab-content .t2 .t1-content .left li:nth-child(2)::after, .tabsBlock .tabsContainer .tab-content .t3 .t1-content .left li:nth-child(2)::after {
+                width: 150px;
+                height: 1px;
+                background-image: url("../img/line2.png");
+                top: 65px;
+                left: 220px;
+                content: '';
+                position: absolute; }
+              .tabsBlock .tabsContainer .tab-content .t1 .t1-content .left li:nth-child(3) p, .tabsBlock .tabsContainer .tab-content .t2 .t1-content .left li:nth-child(3) p, .tabsBlock .tabsContainer .tab-content .t3 .t1-content .left li:nth-child(3) p {
+                letter-spacing: 0.14px;
+                line-height: 18px; }
+              .tabsBlock .tabsContainer .tab-content .t1 .t1-content .left li:nth-child(3)::after, .tabsBlock .tabsContainer .tab-content .t2 .t1-content .left li:nth-child(3)::after, .tabsBlock .tabsContainer .tab-content .t3 .t1-content .left li:nth-child(3)::after {
+                width: 172px;
+                height: 1px;
+                top: 17px;
+                left: 176px;
+                background-image: url("../img/line4.png");
+                background-repeat: repeat-x;
+                content: '';
+                position: absolute; }
+              .tabsBlock .tabsContainer .tab-content .t1 .t1-content .left li p, .tabsBlock .tabsContainer .tab-content .t2 .t1-content .left li p, .tabsBlock .tabsContainer .tab-content .t3 .t1-content .left li p {
+                overflow: hidden;
+                font-family: "Brutal Type Light"; }
+                .tabsBlock .tabsContainer .tab-content .t1 .t1-content .left li p span, .tabsBlock .tabsContainer .tab-content .t2 .t1-content .left li p span, .tabsBlock .tabsContainer .tab-content .t3 .t1-content .left li p span {
+                  font-family: "Brutal Type Medium";
+                  font-size: 18px;
+                  font-weight: bold;
+                  letter-spacing: 0.18px; }
+          .tabsBlock .tabsContainer .tab-content .t1 .t1-content .right, .tabsBlock .tabsContainer .tab-content .t2 .t1-content .right, .tabsBlock .tabsContainer .tab-content .t3 .t1-content .right {
+            width: 260px;
+            line-height: 18px;
+            float: right; }
+            .tabsBlock .tabsContainer .tab-content .t1 .t1-content .right li, .tabsBlock .tabsContainer .tab-content .t2 .t1-content .right li, .tabsBlock .tabsContainer .tab-content .t3 .t1-content .right li {
+              font-size: 14px;
+              position: relative; }
+              .tabsBlock .tabsContainer .tab-content .t1 .t1-content .right li:nth-child(1)::after, .tabsBlock .tabsContainer .tab-content .t2 .t1-content .right li:nth-child(1)::after, .tabsBlock .tabsContainer .tab-content .t3 .t1-content .right li:nth-child(1)::after {
+                width: 70px;
+                height: 70px;
+                top: 20px;
+                right: 265px;
+                background-image: url("../img/line3.png");
+                content: '';
+                position: absolute;
+                background-repeat: no-repeat; }
+              .tabsBlock .tabsContainer .tab-content .t1 .t1-content .right li:nth-child(2), .tabsBlock .tabsContainer .tab-content .t2 .t1-content .right li:nth-child(2), .tabsBlock .tabsContainer .tab-content .t3 .t1-content .right li:nth-child(2) {
+                margin-top: 32px; }
+              .tabsBlock .tabsContainer .tab-content .t1 .t1-content .right li:nth-child(2)::after, .tabsBlock .tabsContainer .tab-content .t2 .t1-content .right li:nth-child(2)::after, .tabsBlock .tabsContainer .tab-content .t3 .t1-content .right li:nth-child(2)::after {
+                width: 50px;
+                height: 1px;
+                top: 17px;
+                right: 265px;
+                background-image: url("../img/line4.png");
+                background-repeat: repeat-x;
+                content: '';
+                position: absolute; }
+              .tabsBlock .tabsContainer .tab-content .t1 .t1-content .right li:nth-child(3), .tabsBlock .tabsContainer .tab-content .t2 .t1-content .right li:nth-child(3), .tabsBlock .tabsContainer .tab-content .t3 .t1-content .right li:nth-child(3) {
+                margin-top: 36px; }
+              .tabsBlock .tabsContainer .tab-content .t1 .t1-content .right li:nth-child(3)::after, .tabsBlock .tabsContainer .tab-content .t2 .t1-content .right li:nth-child(3)::after, .tabsBlock .tabsContainer .tab-content .t3 .t1-content .right li:nth-child(3)::after {
+                width: 109px;
+                height: 50px;
+                top: 40px;
+                right: 265px;
+                background-image: url("../img/line8.png");
+                content: '';
+                position: absolute; }
+              .tabsBlock .tabsContainer .tab-content .t1 .t1-content .right li:nth-child(4), .tabsBlock .tabsContainer .tab-content .t2 .t1-content .right li:nth-child(4), .tabsBlock .tabsContainer .tab-content .t3 .t1-content .right li:nth-child(4) {
+                margin-top: 27px; }
+              .tabsBlock .tabsContainer .tab-content .t1 .t1-content .right li:nth-child(4)::after, .tabsBlock .tabsContainer .tab-content .t2 .t1-content .right li:nth-child(4)::after, .tabsBlock .tabsContainer .tab-content .t3 .t1-content .right li:nth-child(4)::after {
+                content: '';
+                position: absolute;
+                width: 178px;
+                height: 66px;
+                bottom: 15px;
+                right: 267px;
+                background-image: url("../img/line7.png"); }
+              .tabsBlock .tabsContainer .tab-content .t1 .t1-content .right li p, .tabsBlock .tabsContainer .tab-content .t2 .t1-content .right li p, .tabsBlock .tabsContainer .tab-content .t3 .t1-content .right li p {
+                overflow: hidden;
+                font-family: "Brutal Type Light"; }
+                .tabsBlock .tabsContainer .tab-content .t1 .t1-content .right li p span, .tabsBlock .tabsContainer .tab-content .t2 .t1-content .right li p span, .tabsBlock .tabsContainer .tab-content .t3 .t1-content .right li p span {
+                  font-family: "Brutal Type Medium";
+                  font-size: 18px;
+                  font-weight: bold;
+                  letter-spacing: 0.18px; }
+        .tabsBlock .tabsContainer .tab-content .t1 .values-t1, .tabsBlock .tabsContainer .tab-content .t2 .values-t1, .tabsBlock .tabsContainer .tab-content .t3 .values-t1, .tabsBlock .tabsContainer .tab-content .t1 .moreInfo, .tabsBlock .tabsContainer .tab-content .t2 .moreInfo, .tabsBlock .tabsContainer .tab-content .t3 .moreInfo {
+          overflow: hidden;
+          padding-top: 45px;
+          padding-bottom: 35px;
+          width: 654px;
+          font-size: 18px;
+          margin: 0 auto; }
+        .tabsBlock .tabsContainer .tab-content .t1 .moreInfo, .tabsBlock .tabsContainer .tab-content .t2 .moreInfo, .tabsBlock .tabsContainer .tab-content .t3 .moreInfo {
+          padding-top: 0;
+          padding-bottom: 20px; }
+        .tabsBlock .tabsContainer .tab-content .t1 .callback, .tabsBlock .tabsContainer .tab-content .t2 .callback, .tabsBlock .tabsContainer .tab-content .t3 .callback {
+          width: 256px;
+          display: block;
+          padding: 21px 0;
+          overflow: hidden;
+          margin: 0 auto;
+          background: #414f7e;
+          border-radius: 3px;
+          font-family: "Brutal Type ExtraLight";
+          font-size: 24px;
+          font-weight: 400;
+          color: #fff; }
+      .tabsBlock .tabsContainer .tab-content .t2 h2, .tabsBlock .tabsContainer .tab-content .t3 h2 {
+        margin-bottom: 34px;
+        font-family: "Brutal Type Light";
+        font-size: 30px;
+        letter-spacing: 0.3px;
+        text-align: center; }
+      .tabsBlock .tabsContainer .tab-content .t2 .description, .tabsBlock .tabsContainer .tab-content .t3 .description, .tabsBlock .tabsContainer .tab-content .t2 .advantages, .tabsBlock .tabsContainer .tab-content .t3 .advantages {
+        font-family: "Brutal Type Light";
+        font-size: 18px;
+        width: 659px;
+        margin: 0 auto;
+        letter-spacing: 0.18px;
+        margin-bottom: 37px; }
+      .tabsBlock .tabsContainer .tab-content .t2 .advantages, .tabsBlock .tabsContainer .tab-content .t3 .advantages {
+        margin-bottom: 21px; }
+      .tabsBlock .tabsContainer .tab-content .t2 .t2-content, .tabsBlock .tabsContainer .tab-content .t3 .t2-content {
+        margin-top: 21px;
+        width: 900px;
+        position: relative;
+        text-align: left;
+        overflow: hidden; }
+        .tabsBlock .tabsContainer .tab-content .t2 .t2-content .tabsLogo, .tabsBlock .tabsContainer .tab-content .t3 .t2-content .tabsLogo {
+          background-image: url("../img/logo-main.png");
+          background-repeat: no-repeat;
+          height: 269px;
+          width: 315px;
+          background-position: center;
+          position: absolute;
+          left: calc(50% - (315px/2));
+          top: 89px;
+          content: ''; }
+        .tabsBlock .tabsContainer .tab-content .t2 .t2-content .left, .tabsBlock .tabsContainer .tab-content .t3 .t2-content .left {
+          float: left;
+          width: 253px;
+          line-height: 18px; }
+          .tabsBlock .tabsContainer .tab-content .t2 .t2-content .left li, .tabsBlock .tabsContainer .tab-content .t3 .t2-content .left li {
+            font-size: 14px;
+            position: relative; }
+            .tabsBlock .tabsContainer .tab-content .t2 .t2-content .left li:nth-child(1)::after, .tabsBlock .tabsContainer .tab-content .t3 .t2-content .left li:nth-child(1)::after {
+              width: 204px;
+              height: 100px;
+              background-image: url("../img/line1.png");
+              top: 20px;
+              left: 185px;
+              background-repeat: no-repeat;
+              position: absolute;
+              content: ''; }
+            .tabsBlock .tabsContainer .tab-content .t2 .t2-content .left li:nth-child(2), .tabsBlock .tabsContainer .tab-content .t3 .t2-content .left li:nth-child(2) {
+              margin-top: 57px;
+              letter-spacing: 0;
+              line-height: 18px; }
+            .tabsBlock .tabsContainer .tab-content .t2 .t2-content .left li:nth-child(2)::after, .tabsBlock .tabsContainer .tab-content .t3 .t2-content .left li:nth-child(2)::after {
+              width: 150px;
+              height: 1px;
+              background-image: url("../img/line2.png");
+              top: 80px;
+              background-repeat: no-repeat;
+              left: 237px;
+              content: '';
+              position: absolute; }
+            .tabsBlock .tabsContainer .tab-content .t2 .t2-content .left li p, .tabsBlock .tabsContainer .tab-content .t3 .t2-content .left li p {
+              overflow: hidden;
+              font-family: "Brutal Type Light"; }
+              .tabsBlock .tabsContainer .tab-content .t2 .t2-content .left li p span, .tabsBlock .tabsContainer .tab-content .t3 .t2-content .left li p span {
+                font-family: "Brutal Type Medium";
+                font-size: 18px;
+                font-weight: bold;
+                letter-spacing: 0.18px; }
+        .tabsBlock .tabsContainer .tab-content .t2 .t2-content .right, .tabsBlock .tabsContainer .tab-content .t3 .t2-content .right {
+          width: 260px;
+          line-height: 18px;
+          float: right; }
+          .tabsBlock .tabsContainer .tab-content .t2 .t2-content .right li, .tabsBlock .tabsContainer .tab-content .t3 .t2-content .right li {
+            font-size: 14px;
+            position: relative; }
+            .tabsBlock .tabsContainer .tab-content .t2 .t2-content .right li:nth-child(1)::after, .tabsBlock .tabsContainer .tab-content .t3 .t2-content .right li:nth-child(1)::after {
+              width: 60px;
+              height: 75px;
+              top: 15px;
+              right: 265px;
+              background-image: url("../img/line3.png");
+              content: '';
+              position: absolute;
+              background-repeat: no-repeat; }
+            .tabsBlock .tabsContainer .tab-content .t2 .t2-content .right li:nth-child(2), .tabsBlock .tabsContainer .tab-content .t3 .t2-content .right li:nth-child(2) {
+              margin-top: 39px;
+              margin-bottom: 41px; }
+            .tabsBlock .tabsContainer .tab-content .t2 .t2-content .right li:nth-child(2), .tabsBlock .tabsContainer .tab-content .t3 .t2-content .right li:nth-child(2) {
+              letter-spacing: 0; }
+            .tabsBlock .tabsContainer .tab-content .t2 .t2-content .right li:nth-child(2)::after, .tabsBlock .tabsContainer .tab-content .t3 .t2-content .right li:nth-child(2)::after {
+              width: 65px;
+              height: 1px;
+              top: 20px;
+              right: 267px;
+              background-image: url("../img/line4.png");
+              background-repeat: repeat-x;
+              content: '';
+              position: absolute; }
+            .tabsBlock .tabsContainer .tab-content .t2 .t2-content .right li:nth-child(3)::after, .tabsBlock .tabsContainer .tab-content .t3 .t2-content .right li:nth-child(3)::after {
+              width: 93px;
+              height: 1px;
+              top: 15px;
+              right: 268px;
+              background-image: url("../img/line5.png");
+              content: '';
+              position: absolute; }
+            .tabsBlock .tabsContainer .tab-content .t2 .t2-content .right li p, .tabsBlock .tabsContainer .tab-content .t3 .t2-content .right li p {
+              overflow: hidden;
+              font-family: "Brutal Type Light"; }
+              .tabsBlock .tabsContainer .tab-content .t2 .t2-content .right li p span, .tabsBlock .tabsContainer .tab-content .t3 .t2-content .right li p span {
+                font-family: "Brutal Type Medium";
+                font-size: 18px;
+                font-weight: bold;
+                letter-spacing: 0.18px; }
+      .tabsBlock .tabsContainer .tab-content .t2 .values-t2, .tabsBlock .tabsContainer .tab-content .t3 .values-t2, .tabsBlock .tabsContainer .tab-content .t2 .moreInfo, .tabsBlock .tabsContainer .tab-content .t3 .moreInfo {
+        overflow: hidden;
+        padding-top: 68px;
+        padding-bottom: 35px;
+        width: 654px;
+        font-size: 18px;
+        margin: 0 auto; }
+      .tabsBlock .tabsContainer .tab-content .t2 .moreInfo, .tabsBlock .tabsContainer .tab-content .t3 .moreInfo {
+        padding-top: 0;
+        padding-bottom: 25px; }
+      .tabsBlock .tabsContainer .tab-content .t2 .callback, .tabsBlock .tabsContainer .tab-content .t3 .callback {
+        width: 256px;
+        display: block;
+        padding: 21px 0;
+        overflow: hidden;
+        margin: 0 auto;
+        background: #414f7e;
+        border-radius: 3px;
+        font-family: "Brutal Type ExtraLight";
+        font-size: 24px;
+        font-weight: 400;
+        color: #fff; }
+      .tabsBlock .tabsContainer .tab-content .t3 h2 {
+        margin-bottom: 34px;
+        font-family: "Brutal Type Light";
+        font-size: 30px;
+        letter-spacing: 0.3px;
+        text-align: center; }
+      .tabsBlock .tabsContainer .tab-content .t3 .description, .tabsBlock .tabsContainer .tab-content .t3 .advantages {
+        font-family: "Brutal Type Light";
+        font-size: 18px;
+        width: 659px;
+        margin: 0 auto;
+        letter-spacing: 0.18px;
+        margin-bottom: 37px; }
+      .tabsBlock .tabsContainer .tab-content .t3 .advantages {
+        margin-bottom: 21px; }
+      .tabsBlock .tabsContainer .tab-content .t3 .t3-content {
+        margin-top: 51px;
+        width: 900px;
+        position: relative;
+        text-align: left;
+        overflow: hidden; }
+        .tabsBlock .tabsContainer .tab-content .t3 .t3-content .tabsLogo {
+          background-image: url("../img/logo-main.png");
+          background-repeat: no-repeat;
+          height: 269px;
+          width: 315px;
+          background-position: center;
+          position: absolute;
+          left: calc(50% - (315px/2));
+          top: 135px;
+          content: ''; }
+        .tabsBlock .tabsContainer .tab-content .t3 .t3-content .left {
+          float: left;
+          width: 300px;
+          line-height: 18px; }
+          .tabsBlock .tabsContainer .tab-content .t3 .t3-content .left li {
+            font-size: 14px;
+            position: relative; }
+            .tabsBlock .tabsContainer .tab-content .t3 .t3-content .left li:nth-child(1)::after {
+              width: 110px;
+              height: 95px;
+              top: 17px;
+              left: 285px;
+              background-image: url("../img/line9.png");
+              background-repeat: no-repeat;
+              position: absolute;
+              content: ''; }
+            .tabsBlock .tabsContainer .tab-content .t3 .t3-content .left li:nth-child(1) {
+              margin-top: 24px; }
+            .tabsBlock .tabsContainer .tab-content .t3 .t3-content .left li:nth-child(2) {
+              margin-top: 67px;
+              margin-bottom: 53px;
+              letter-spacing: 0;
+              line-height: 18px; }
+            .tabsBlock .tabsContainer .tab-content .t3 .t3-content .left li:nth-child(2)::after {
+              width: 150px;
+              height: 1px;
+              background-image: url("../img/line2.png");
+              top: 126px;
+              left: 198px;
+              content: '';
+              position: absolute; }
+            .tabsBlock .tabsContainer .tab-content .t3 .t3-content .left li:nth-child(3) {
+              letter-spacing: 0; }
+            .tabsBlock .tabsContainer .tab-content .t3 .t3-content .left li:nth-child(3)::after {
+              width: 150px;
+              height: 81px;
+              bottom: 50px;
+              left: 310px;
+              background-image: url("../img/line10.png");
+              content: '';
+              position: absolute;
+              background-repeat: no-repeat; }
+            .tabsBlock .tabsContainer .tab-content .t3 .t3-content .left li p {
+              overflow: hidden;
+              font-family: "Brutal Type Light"; }
+              .tabsBlock .tabsContainer .tab-content .t3 .t3-content .left li p span {
+                font-family: "Brutal Type Medium";
+                font-size: 18px;
+                font-weight: bold;
+                letter-spacing: 0.18px; }
+        .tabsBlock .tabsContainer .tab-content .t3 .t3-content .right {
+          width: 260px;
+          line-height: 18px;
+          float: right; }
+          .tabsBlock .tabsContainer .tab-content .t3 .t3-content .right li {
+            font-size: 14px;
+            position: relative; }
+            .tabsBlock .tabsContainer .tab-content .t3 .t3-content .right li:nth-child(1)::after {
+              width: 50px;
+              height: 1px;
+              top: 163px;
+              right: 257px;
+              background-image: url("../img/line2.png");
+              content: '';
+              position: absolute;
+              background-repeat: no-repeat; }
+            .tabsBlock .tabsContainer .tab-content .t3 .t3-content .right li:nth-child(2) {
+              margin-top: 35px;
+              margin-bottom: 42px;
+              margin-left: -50px; }
+            .tabsBlock .tabsContainer .tab-content .t3 .t3-content .right li:nth-child(2)::after {
+              width: 43px;
+              height: 1px;
+              background-image: url("../img/line4.png");
+              background-repeat: repeat-x;
+              top: 8px;
+              right: 315px;
+              content: '';
+              position: absolute; }
+            .tabsBlock .tabsContainer .tab-content .t3 .t3-content .right li:nth-child(3)::after {
+              width: 100px;
+              height: 1px;
+              top: 31px;
+              right: 258px;
+              background-image: url("../img/line2.png");
+              content: '';
+              position: absolute; }
+            .tabsBlock .tabsContainer .tab-content .t3 .t3-content .right li p {
+              overflow: hidden;
+              font-family: "Brutal Type Light"; }
+              .tabsBlock .tabsContainer .tab-content .t3 .t3-content .right li p span {
+                font-family: "Brutal Type Medium";
+                font-size: 18px;
+                font-weight: bold; }
+      .tabsBlock .tabsContainer .tab-content .t3 .img-mob-block {
+        display: none; }
+      .tabsBlock .tabsContainer .tab-content .t3 .moreInfo {
+        width: 587px;
+        font-size: 18px;
+        line-height: 24px;
+        letter-spacing: 0.18px;
+        padding-bottom: 45px;
+        padding-top: 20px; }
+      .tabsBlock .tabsContainer .tab-content .t3 .callback {
+        width: 256px;
+        display: block;
+        padding: 21px 0;
+        overflow: hidden;
+        margin: 0 auto;
+        background: #414f7e;
+        border-radius: 3px;
+        font-family: "Brutal Type ExtraLight";
+        font-size: 24px;
+        font-weight: 400;
+        color: #fff; }
+
+.slider {
+  width: 100%;
+  height: 340px;
+  background: #414f7e; }
+  .slider .sliderBox {
+    width: 1110px;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    position: relative;
+    margin: 0 auto; }
+    .slider .sliderBox .content {
+      width: 620px;
+      color: #fff;
+      font-family: "Brutal Type ExtraLight";
+      font-size: 24px;
+      position: relative; }
+      .slider .sliderBox .content:before {
+        content: "";
+        width: 92px;
+        height: 70px;
+        background-image: url("../img/quote-left.png");
+        background-repeat: no-repeat;
+        position: absolute;
+        bottom: -30px;
+        left: -125px; }
+      .slider .sliderBox .content:after {
+        content: "";
+        width: 92px;
+        height: 70px;
+        background-image: url("../img/quote-right.png");
+        background-repeat: no-repeat;
+        position: absolute;
+        top: -48px;
+        right: -132px;
+        color: #fff; }
+      .slider .sliderBox .content .name {
+        position: absolute;
+        bottom: -45px;
+        right: -25px; }
+
+footer {
+  width: 100%;
+  background-image: url("../img/footer-bg.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  max-width: 100%;
+  position: relative;
+  background-color: #414f7e;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding-bottom: 40px; }
+  footer form {
+    padding: 35px 0;
+    width: 350px;
+    position: absolute;
+    top: 424px;
+    left: calc(50%-(350px/2));
+    height: 412px;
+    box-shadow: 0 0 12px 1px rgba(0, 0, 0, 0.13);
+    background-color: #fff;
+    box-shadow: 0 0 12px 1px rgba(0, 0, 0, 0.13);
+    -webkit-box-shadow: 0 0 12px 1px rgba(0, 0, 0, 0.13);
+    -moz-box-shadow: 0 0 12px 1px rgba(0, 0, 0, 0.13);
+    border-radius: 3px; }
+    footer form fieldset {
+      width: 279px;
+      margin: 0 auto;
+      text-align: center; }
+      footer form fieldset legend {
+        width: 262px;
+        color: #010101;
+        font-family: "Brutal Type";
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 24px; }
+      footer form fieldset input {
+        border: 2px solid #888888;
+        width: 279px;
+        height: 56px;
+        color: #b2b1b1;
+        border-radius: 2px;
+        margin-top: 29px;
+        font-size: 18px;
+        font-family: "Brutal Type";
+        font-family: "BrutalType-Light";
+        box-shadow: 0 0 12px 1px rgba(0, 0, 0, 0.13);
+        -webkit-box-shadow: 0 0 12px 1px rgba(0, 0, 0, 0.13);
+        -moz-box-shadow: 0 0 12px 1px rgba(0, 0, 0, 0.13);
+        padding-left: 24px; }
+        footer form fieldset input::-webkit-input-placeholder {
+          color: #b2b1b1;
+          font-family: "Brutal Type ExtraLight";
+          font-size: 18px;
+          font-weight: 400; }
+        footer form fieldset input:-ms-input-placeholder {
+          color: #b2b1b1;
+          font-family: "Brutal Type ExtraLight";
+          font-size: 18px;
+          font-weight: 400; }
+        footer form fieldset input::-ms-input-placeholder {
+          color: #b2b1b1;
+          font-family: "Brutal Type ExtraLight";
+          font-size: 18px;
+          font-weight: 400; }
+        footer form fieldset input::placeholder {
+          color: #b2b1b1;
+          font-family: "Brutal Type ExtraLight";
+          font-size: 18px;
+          font-weight: 400; }
+      footer form fieldset input[type=submit] {
+        width: 278px;
+        height: 64px;
+        background-color: #414f7e;
+        border-radius: 2px;
+        font-family: "Brutal Type ExtraLight";
+        margin-top: 34px;
+        font-size: 24px;
+        cursor: pointer;
+        color: #fff;
+        padding-left: 0; }
+  footer .footer-content {
+    width: 1110px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 424px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+    footer .footer-content .footer-about {
+      color: #fff;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -ms-flex-item-align: end;
+      align-self: flex-end;
+      font-family: "Brutal Type ExtraLight"; }
+      footer .footer-content .footer-about .footer-logo-conteiner {
+        margin-top: 245px;
+        width: 253px;
+        overflow: hidden;
+        font-size: 12px; }
+        footer .footer-content .footer-about .footer-logo-conteiner img {
+          margin: 0 16px 0 9px; }
+        footer .footer-content .footer-about .footer-logo-conteiner span {
+          overflow: hidden; }
+      footer .footer-content .footer-about ul {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 18px;
+        letter-spacing: 0.12px;
+        list-style: none;
+        margin-top: 33px;
+        display: block;
+        overflow: hidden; }
+        footer .footer-content .footer-about ul .subtype {
+          margin-top: 0;
+          padding-left: 10px; }
+    footer .footer-content .footer-info {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -ms-flex-item-align: end;
+      align-self: flex-end;
+      color: #fff;
+      font-family: "Brutal Type ExtraLight";
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 18px;
+      letter-spacing: 0.12px;
+      text-align: right; }
+      footer .footer-content .footer-info p {
+        overflow: hidden; }
+      footer .footer-content .footer-info p:nth-child(2) {
+        margin: 20px 0; }
+      footer .footer-content .footer-info p:nth-child(3) {
+        margin-bottom: 14px; }
+      footer .footer-content .footer-info .footer-icons {
+        overflow: hidden; }
+        footer .footer-content .footer-info .footer-icons a:first-child {
+          margin-right: 15px; }

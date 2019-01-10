@@ -1,0 +1,17 @@
+@charset "UTF-8";
+.slider-team {
+  width: 100%;
+  background-color: #c3e0f8; }
+  .slider-team p {
+    color: #000000;
+    font-family: "Brutal Type";
+    font-size: 30px;
+    font-weight: 300;
+    /* Text style for "Наша коман" */
+    letter-spacing: 0.3px; }
+  .slider-team .slider-team-content {
+    width: 1110px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
